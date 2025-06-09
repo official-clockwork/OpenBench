@@ -1,10 +1,10 @@
 {
     "client_version"     : 42,
-    "client_repo_url"    : "https://github.com/AndyGrant/OpenBench",
+    "client_repo_url"    : "https://github.com/official-clockwork/OpenBench",
     "client_repo_ref"    : "master",
 
     "fastchess_min_version" : "1.7.0",
-    "fastchess_repo_url"    : "https://github.com/AndyGrant/fastchess",
+    "fastchess_repo_url"    : "https://github.com/official-clockwork/fastchess",
     "fastchess_repo_ref"    : "master",
 
     "use_cross_approval"          : false,
@@ -28,26 +28,6 @@
     ],
 
     "engines" : [
-        "4ku",
-        "Berserk",
-        "Bit-Genie",
-        "BlackMarlin",
-        "Clockwork",
-        "Demolito",
-        "Drofa",
-        "Equisetum",
-        "Ethereal",
-        "FabChess",
-        "Halogen",
-        "Igel",
-        "Koivisto",
-        "Laser",
-        "RubiChess",
-        "Seer",
-        "Stash",
-        "Stockfish",
-        "Weiss",
-        "Winter",
-        "Zahak"
+        "Clockwork"
     ]
 }
