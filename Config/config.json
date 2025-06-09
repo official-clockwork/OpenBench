@@ -24,6 +24,7 @@
     ],
 
     "engines" : [
+        "Clockwork",
         "4ku",
         "Berserk",
         "Bit-Genie",
