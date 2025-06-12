@@ -99,6 +99,7 @@ def longStatBlock(test):
     lower, elo, upper = OpenBench.stats.Elo(test.results())
 
     lines = [
+        'Test  | %s' % (prettyDevName(test)),
         'Elo   | %0.2f +- %0.2f (95%%)' % (elo, max(upper - elo, elo - lower)),
         '%-5s | %s Threads=%d Hash=%dMB' % (type_text, timecontrol, threads, hashmb),
     ]
