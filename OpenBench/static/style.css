@@ -1,5 +1,7 @@
-
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
     color: #8BBAD6;
 }
@@ -11,16 +13,18 @@ body {
 
     --color-font1: #DBDEE1;
     --color-font2: #949BA4;
-    --color-font3: #008F11;
+    --color-font3: #d4af37;
 
     background-color: var(--color1);
 
     font-size: 16px;
     font-family: "Courier Prime", serif;
-    display:flex;
+    display: flex;
 }
 
-body, html, main{
+body,
+html,
+main {
     padding: 0;
     margin: 0;
     min-width: 100%;
@@ -37,7 +41,7 @@ body, html, main{
     display: none;
 }
 
-#content-parent{
+#content-parent {
     flex-grow: 1;
     justify-content: left;
     height: 100%;
@@ -48,10 +52,22 @@ body, html, main{
 }
 
 #content {
-    max-width: calc(min(100%,1000px));
+    max-width: calc(min(100%, 1000px));
     width: 100%;
     white-space: nowrap;
     display: inline-block;
+}
+
+/* Center the logo header */
+#content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#content-header h2 {
+    margin: 0;
 }
 
 #sidebar ul {
@@ -111,7 +127,7 @@ body, html, main{
     background-color: #323232;
 }
 
-#content .hoverable tr:hover{
+#content .hoverable tr:hover {
     background-color: var(--color1);
 }
 
@@ -153,12 +169,14 @@ body, html, main{
 
 /* Table Spacer for chaining Tables as a hack */
 
-#content .table-spacer th, #content .table-spacer tr {
+#content .table-spacer th,
+#content .table-spacer tr {
     background-color: var(--color1);
     height: 1rem;
 }
 
-#content .table-spacer-small th, #content .table-spacer-small tr {
+#content .table-spacer-small th,
+#content .table-spacer-small tr {
     background-color: #171717;
     height: 0.4rem;
     padding: 0px;
@@ -176,7 +194,8 @@ body, html, main{
     border-bottom: 1px #444444 solid;
 }
 
-#content th, #content td {
+#content th,
+#content td {
     padding: 10px 12px 6px 12px;
 }
 
@@ -185,12 +204,12 @@ body, html, main{
     justify-content: space-between;
 }
 
-#content .anchor-container > .anchorbutton {
+#content .anchor-container>.anchorbutton {
     flex: 1;
     margin-right: 4px;
 }
 
-#content .anchor-container > .anchorbutton:last-child {
+#content .anchor-container>.anchorbutton:last-child {
     margin-right: 0px;
 }
 
@@ -411,6 +430,8 @@ td pre {
         position: relative;
         z-index: 10;
         font-size: 2.2rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     #content-parent {
@@ -428,8 +449,9 @@ td pre {
     #content-header {
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         background-color: var(--color1);
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         z-index: 10;
@@ -439,6 +461,8 @@ td pre {
         /* Adjust the font size to the screen width, ensuring that the title doesn't overflow */
         font-size: clamp(1.0rem, 4.8vw, 1.4rem);
         margin: 8px 0;
+        flex-grow: 1;
+        text-align: center;
     }
 
     #content-header .site-title {
@@ -506,4 +530,3 @@ td pre {
     border: 1px solid #ccc;
     border-radius: 8px;
 }
-
