@@ -1,6 +1,6 @@
 {
     "private" : false,
-    "nps"     : 3000000,
+    "nps"     : 2275000,
     "source"  : "https://github.com/official-clockwork/clockwork",
 
     "build" : {
